@@ -4,6 +4,8 @@ description: A new Flutter project.
 dependencies:
   flutter:
     sdk: flutter
+  css_colors:
+  url_launcher:
 
 dev_dependencies:
   flutter_test:
