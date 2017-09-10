@@ -25,7 +25,6 @@ class ShoppingList extends StatelessWidget {
 */
 
 class ShoppingList extends StatefulWidget {
-
   //StatefulElement createElement() => new StatefulElement(this);
   @override
   _ShoppingListState createState() => new _ShoppingListState();
@@ -33,7 +32,6 @@ class ShoppingList extends StatefulWidget {
 
 // Keeps a Checklist in sync with the AnimatedList that is used.
 class AnimatedChecklist extends CheckItemList {
-
   AnimatedChecklist(
       {List<CheckItem> items, this.removedItemBuilder, this.listKey})
       : super(items: items);
@@ -57,10 +55,9 @@ class AnimatedChecklist extends CheckItemList {
 //we create the state of pa
 class _ShoppingListState extends State<ShoppingList>
     with TickerProviderStateMixin {
-
   final TextEditingController _controller = new TextEditingController();
   final GlobalKey<AnimatedListState> _listKey =
-  new GlobalKey<AnimatedListState>();
+      new GlobalKey<AnimatedListState>();
   AnimatedChecklist _checklist;
 
   @override
@@ -107,8 +104,8 @@ class _ShoppingListState extends State<ShoppingList>
               ),
               onPressed: () {
                 if (_controller.text.length > 0) {
-                  CheckItem item = new CheckItem(
-                      title: _controller.text, isSelected: false);
+                  CheckItem item =
+                      new CheckItem(title: _controller.text, isSelected: false);
                   setState(() {
                     _checklist.addItem(item, index: 0);
                     _controller.clear();
