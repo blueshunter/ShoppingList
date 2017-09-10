@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shopping_list/widget/ShoppingListPage.dart';
+import 'package:flutter_shopping_list/widget/shopping_list_page.dart';
 import 'package:flutter_shopping_list/theme.dart';
 
 void main() {
