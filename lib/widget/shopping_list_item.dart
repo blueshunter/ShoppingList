@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shopping_list/model/Item.dart';
 import 'package:flutter_shopping_list/model/check_item.dart';
-
-// simple list item stateless widget (text)
-/*
-class ShoppingListItem extends StatelessWidget {
-  final Item _item;
-
-  ShoppingListItem(this._item);
-
-  @override
-  Widget build(BuildContext context) {
-    return new Text(_item.name);
-  }
-}
-*/
 
 // list item with check box, callback and on tap gesture event
 typedef void ShopingListItemChangedCallback(
